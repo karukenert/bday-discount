@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const { x = '0', y = '0' } = defineProps<{
-  x?: string
-  y?: string
+  x?: string;
+  y?: string;
 }>();
 </script>
 
