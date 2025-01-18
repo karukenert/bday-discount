@@ -1,12 +1,16 @@
 {
   "name": "bday-discount",
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+
   },
   "dependencies": {
     "@primevue/themes": "^4.2.5",
@@ -14,7 +18,9 @@
     "vue": "^3.5.13"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^3.14.0",
     "@vitejs/plugin-vue": "^5.2.1",
+    "eslint": "^9.18.0",
     "sass-embedded": "^1.83.4",
     "typescript": "~5.6.3",
     "vite": "^5.4.11",
