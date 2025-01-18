@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { Column, DataTable } from 'primevue'
-import { data } from '../data/data'
-import Container from './Container.vue'
-import Header from './Header.vue'
+import { Column, DataTable } from 'primevue';
+import { data } from '../data/data';
+import Container from './Container.vue';
+import Header from './Header.vue';
 </script>
 
 <template>

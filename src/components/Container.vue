@@ -2,7 +2,7 @@
 const { x = '0', y = '0' } = defineProps<{
   x?: string
   y?: string
-}>()
+}>();
 </script>
 
 <template>
