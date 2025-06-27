@@ -5,12 +5,13 @@ on:
             - main
     workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-24.04
+
+    permissions:
+      pages: write
+      id-token: write
 
     steps:
       - name: Checkout
