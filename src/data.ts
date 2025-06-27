@@ -3,19 +3,20 @@
 //   ID_CARD = 'ID-kaart',
 // }
 
-enum Category {
-  FOOD = 'Söök',
-  DRINK = 'Jook',
-  CLOTHES = 'Riided',
-  BOOKS = 'Raamatud',
-  COSMETICS = 'Kosmeetika',
-  OTHER = 'Muu',
-}
+const Category = {
+  FOOD: 'Söök',
+  DRINK: 'Jook',
+  CLOTHES: 'Riided',
+  BOOKS: 'Raamatud',
+  COSMETICS: 'Kosmeetika',
+  OTHER: 'Muu',
+} as const;
 
 interface Discount {
   companyName: string;
   discountName: string;
-  category?: (Category | string)[];
+  category?: (typeof Category | string)[];
+
   // extraCriteria?: (Criteria | string)[];
   // discountPercentage?: number;
   discountDescription: string;
